@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apeksha Beauty Parlour</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a class="nav-logo" href="#home">
+        <span class="logo-icon">❀</span>
+        <span class="logo-text">
+          <span class="logo-main">Apeksha</span>
+          <span class="logo-sub">Beauty Parlour</span>
+        </span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#makeup">Makeup</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li class="nav-cta-mobile">
+          <a href="https://www.instagram.com/rathna_makeup_artistry" target="_blank" class="btn-primary">
+            <i class="fab fa-instagram"></i> Book Appointment
+          </a>
+        </li>
+      </ul>
+      <a href="https://www.instagram.com/rathna_makeup_artistry" target="_blank" class="btn-primary nav-cta-desktop">
+        <i class="fab fa-instagram"></i> Book Appointment
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <i class="fas fa-bars" id="hamburgerIcon"></i>
+      </button>
+    </div>
+    <div class="nav-overlay" id="navOverlay"></div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+
+    <!-- Mehendi SVG corners -->
+    <svg class="mehendi-corner top-left" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+      <g fill="none" stroke="#c9748a" stroke-width="1.2" opacity="0.55">
+        <path d="M10,10 Q60,10 60,60 Q60,10 110,10"/>
+        <path d="M10,10 Q10,60 60,60 Q10,60 10,110"/>
+        <circle cx="60" cy="60" r="18"/><circle cx="60" cy="60" r="10"/><circle cx="60" cy="60" r="4"/>
+        <path d="M60,42 Q75,50 78,60 Q75,70 60,78 Q45,70 42,60 Q45,50 60,42Z"/>
+        <circle cx="30" cy="30" r="6"/><circle cx="30" cy="30" r="3"/>
+        <path d="M20,60 Q30,55 40,60 Q30,65 20,60Z"/>
+        <path d="M60,20 Q55,30 60,40 Q65,30 60,20Z"/>
+        <path d="M78,30 Q85,40 80,50"/><path d="M30,78 Q40,85 50,80"/>
+        <circle cx="85" cy="25" r="4"/><circle cx="25" cy="85" r="4"/>
+        <path d="M15,40 Q25,35 35,40"/><path d="M40,15 Q35,25 40,35"/>
+        <path d="M70,15 Q80,20 85,30"/><path d="M15,70 Q20,80 30,85"/>
+      </g>
+    </svg>
+    <svg class="mehendi-corner top-right" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+      <g fill="none" stroke="#c9748a" stroke-width="1.2" opacity="0.55" transform="scale(-1,1) translate(-200,0)">
+        <path d="M10,10 Q60,10 60,60 Q60,10 110,10"/>
+        <path d="M10,10 Q10,60 60,60 Q10,60 10,110"/>
+        <circle cx="60" cy="60" r="18"/><circle cx="60" cy="60" r="10"/><circle cx="60" cy="60" r="4"/>
+        <path d="M60,42 Q75,50 78,60 Q75,70 60,78 Q45,70 42,60 Q45,50 60,42Z"/>
+        <circle cx="30" cy="30" r="6"/><circle cx="30" cy="30" r="3"/>
+        <path d="M20,60 Q30,55 40,60 Q30,65 20,60Z"/>
+        <path d="M60,20 Q55,30 60,40 Q65,30 60,20Z"/>
+        <path d="M78,30 Q85,40 80,50"/><path d="M30,78 Q40,85 50,80"/>
+        <circle cx="85" cy="25" r="4"/><circle cx="25" cy="85" r="4"/>
+      </g>
+    </svg>
+    <svg class="mehendi-corner bottom-left" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+      <g fill="none" stroke="#c9748a" stroke-width="1.2" opacity="0.55" transform="scale(1,-1) translate(0,-200)">
+        <path d="M10,10 Q60,10 60,60 Q60,10 110,10"/>
+        <path d="M10,10 Q10,60 60,60 Q10,60 10,110"/>
+        <circle cx="60" cy="60" r="18"/><circle cx="60" cy="60" r="10"/><circle cx="60" cy="60" r="4"/>
+        <path d="M60,42 Q75,50 78,60 Q75,70 60,78 Q45,70 42,60 Q45,50 60,42Z"/>
+        <circle cx="30" cy="30" r="6"/><circle cx="30" cy="30" r="3"/>
+      </g>
+    </svg>
+    <svg class="mehendi-corner bottom-right" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+      <g fill="none" stroke="#c9748a" stroke-width="1.2" opacity="0.55" transform="scale(-1,-1) translate(-200,-200)">
+        <path d="M10,10 Q60,10 60,60 Q60,10 110,10"/>
+        <path d="M10,10 Q10,60 60,60 Q10,60 10,110"/>
+        <circle cx="60" cy="60" r="18"/><circle cx="60" cy="60" r="10"/><circle cx="60" cy="60" r="4"/>
+        <path d="M60,42 Q75,50 78,60 Q75,70 60,78 Q45,70 42,60 Q45,50 60,42Z"/>
+        <circle cx="30" cy="30" r="6"/><circle cx="30" cy="30" r="3"/>
+      </g>
+    </svg>
+
+    <!-- Floating petals -->
+    <div class="petal petal-1">🌸</div>
+    <div class="petal petal-2">🌺</div>
+    <div class="petal petal-3">✿</div>
+    <div class="petal petal-4">🌸</div>
+    <div class="petal petal-5">❀</div>
+
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-badge"><span class="badge-dot"></span> Premium Beauty &amp; Makeup Studio</div>
+        <div class="hero-deco-line">
+          <svg viewBox="0 0 300 20" xmlns="http://www.w3.org/2000/svg"><path d="M0,10 Q30,2 60,10 Q90,18 120,10 Q150,2 180,10 Q210,18 240,10 Q270,2 300,10" fill="none" stroke="#c9a96e" stroke-width="1.5" opacity="0.7"/><circle cx="150" cy="10" r="3" fill="#c9a96e" opacity="0.7"/></svg>
+        </div>
+        <h1 class="hero-title">Enhance Your Beauty,<br /><span>Celebrate Your Style</span></h1>
+        <div class="hero-deco-line">
+          <svg viewBox="0 0 300 20" xmlns="http://www.w3.org/2000/svg"><path d="M0,10 Q30,18 60,10 Q90,2 120,10 Q150,18 180,10 Q210,2 240,10 Q270,18 300,10" fill="none" stroke="#c9a96e" stroke-width="1.5" opacity="0.7"/><circle cx="150" cy="10" r="3" fill="#c9a96e" opacity="0.7"/></svg>
+        </div>
+        <p class="hero-subtitle">Professional Beauty &amp; Makeup Services for Every Special Moment</p>
+        <p class="hero-location">📍 Apeksha Beauty Parlour – Belapu, Kaup, Udupi</p>
+        <div class="hero-actions">
+          <a href="#services" class="btn-hero-primary">Explore Services</a>
+          <a href="#contact" class="btn-hero-outline">Contact Us</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><span class="stat-num">500+</span><span class="stat-label">Happy Brides</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><span class="stat-num">10+</span><span class="stat-label">Years Experience</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><span class="stat-num">20+</span><span class="stat-label">Services</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <!-- Mehendi mandala ring -->
+        <svg class="mandala-ring" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+          <g fill="none" stroke="#c9748a" stroke-width="1" opacity="0.3" transform="translate(200,200)">
+            <circle r="190"/><circle r="170"/><circle r="150"/>
+            <circle r="130"/><circle r="110"/>
+            <g stroke-width="0.8">
+              <line x1="0" y1="-190" x2="0" y2="190"/>
+              <line x1="-190" y1="0" x2="190" y2="0"/>
+              <line x1="-134" y1="-134" x2="134" y2="134"/>
+              <line x1="134" y1="-134" x2="-134" y2="134"/>
+              <line x1="-72" y1="-178" x2="72" y2="178"/>
+              <line x1="72" y1="-178" x2="-72" y2="178"/>
+              <line x1="-178" y1="-72" x2="178" y2="72"/>
+              <line x1="178" y1="-72" x2="-178" y2="72"/>
+            </g>
+            <g>
+              <path d="M0,-150 Q20,-130 0,-110 Q-20,-130 0,-150Z" fill="#c9748a" opacity="0.2"/>
+              <path d="M0,150 Q20,130 0,110 Q-20,130 0,150Z" fill="#c9748a" opacity="0.2"/>
+              <path d="M-150,0 Q-130,20 -110,0 Q-130,-20 -150,0Z" fill="#c9748a" opacity="0.2"/>
+              <path d="M150,0 Q130,20 110,0 Q130,-20 150,0Z" fill="#c9748a" opacity="0.2"/>
+              <path d="M-106,-106 Q-90,-86 -70,-106 Q-90,-126 -106,-106Z" fill="#c9748a" opacity="0.2"/>
+              <path d="M106,-106 Q90,-86 70,-106 Q90,-126 106,-106Z" fill="#c9748a" opacity="0.2"/>
+              <path d="M-106,106 Q-90,86 -70,106 Q-90,126 -106,106Z" fill="#c9748a" opacity="0.2"/>
+              <path d="M106,106 Q90,86 70,106 Q90,126 106,106Z" fill="#c9748a" opacity="0.2"/>
+            </g>
+          </g>
+        </svg>
+
+        <div class="hero-center-card">
+          <div class="hcc-inner">
+            <svg class="hcc-mehendi" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+              <g fill="none" stroke="#c9748a" stroke-width="1.2" transform="translate(60,60)">
+                <circle r="50"/><circle r="38"/><circle r="26"/><circle r="14"/>
+                <path d="M0,-50 Q14,-38 0,-26 Q-14,-38 0,-50Z" fill="#c9748a" opacity="0.3"/>
+                <path d="M0,50 Q14,38 0,26 Q-14,38 0,50Z" fill="#c9748a" opacity="0.3"/>
+                <path d="M-50,0 Q-38,14 -26,0 Q-38,-14 -50,0Z" fill="#c9748a" opacity="0.3"/>
+                <path d="M50,0 Q38,14 26,0 Q38,-14 50,0Z" fill="#c9748a" opacity="0.3"/>
+                <circle r="6" fill="#c9748a" opacity="0.5"/>
+                <line x1="0" y1="-50" x2="0" y2="50" stroke-width="0.6"/>
+                <line x1="-50" y1="0" x2="50" y2="0" stroke-width="0.6"/>
+                <line x1="-35" y1="-35" x2="35" y2="35" stroke-width="0.6"/>
+                <line x1="35" y1="-35" x2="-35" y2="35" stroke-width="0.6"/>
+              </g>
+            </svg>
+            <div class="hcc-text">
+              <div class="hcc-name">Apeksha</div>
+              <div class="hcc-sub">Beauty Parlour</div>
+            </div>
+          </div>
+          <div class="hcc-tags">
+            <span>💄 Bridal</span>
+            <span>🌿 Skin Care</span>
+            <span>💍 Events</span>
+          </div>
+        </div>
+
+        <div class="hero-float-card card-a">✨ <span>Bridal Specialist</span></div>
+        <div class="hero-float-card card-b">❀ <span>Premium Care</span></div>
+        <div class="hero-float-card card-c">💄 <span>HD Makeup</span></div>
+      </div>
+    </div>
+    <a class="hero-scroll-hint" href="#about"><i class="fas fa-chevron-down"></i></a>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about section-pad" id="about">
+    <div class="about-container">
+      <div class="about-visual">
+        <div class="about-img-wrap">
+          <div class="about-img-bg"></div>
+          <div class="about-img-card">
+            <div class="about-big-icon">❀</div>
+            <h3>Apeksha Beauty Parlour</h3>
+            <p>Ladies Beauty &amp; Makeup Artistry</p>
+            <div class="about-divider"></div>
+            <p class="about-loc">📍 Belapu, Kaup, Udupi</p>
+          </div>
+          <div class="about-badge-float">✨ <span>Premium Beauty Studio</span></div>
+        </div>
+      </div>
+      <div class="about-content">
+        <span class="section-tag">About Us</span>
+        <h2 class="section-title">Your Trusted Beauty<br /><span>Destination in Udupi</span></h2>
+        <p class="about-desc">Welcome to <strong>Apeksha Beauty Parlour</strong>, a premium ladies beauty studio nestled in the heart of Belapu, Kaup, Udupi. We are dedicated to bringing out the best in every woman through professional beauty care, expert makeup artistry, and personalized treatments tailored to your unique needs.</p>
+        <p class="about-desc">Whether you are preparing for your wedding day, a festive celebration, or simply want to pamper yourself, our skilled team is here to make you look and feel absolutely beautiful.</p>
+        <div class="about-highlights">
+          <div class="about-highlight-item"><span class="ah-icon">✨</span><span>Professional beauty services for every woman</span></div>
+          <div class="about-highlight-item"><span class="ah-icon">💍</span><span>Bridal &amp; event makeup specialists</span></div>
+          <div class="about-highlight-item"><span class="ah-icon">🌸</span><span>Personalized beauty care &amp; skin treatments</span></div>
+          <div class="about-highlight-item"><span class="ah-icon">⭐</span><span>Premium quality products used in all services</span></div>
+          <div class="about-highlight-item"><span class="ah-icon">❤️</span><span>Friendly, comfortable &amp; hygienic environment</span></div>
+          <div class="about-highlight-item"><span class="ah-icon">🌿</span><span>Services for weddings, festivals &amp; special occasions</span></div>
+        </div>
+        <a href="https://www.instagram.com/rathna_makeup_artistry" target="_blank" class="btn-primary about-cta">
+          ❤️ Get in Touch
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services section-pad" id="services">
+    <div class="services-container">
+      <div class="section-header">
+        <span class="section-tag">👁 Beauty Services</span>
+        <h2 class="section-title">Our <span>Beauty Services</span></h2>
+        <p class="section-subtitle">A complete range of professional beauty treatments crafted for every woman</p>
+      </div>
+      <div class="services-tabs" id="servicesTabs"></div>
+      <div class="services-panel" id="servicesPanel"></div>
+      <div class="services-note">
+        ✨ <span>All services use premium quality products. Contact us for pricing details.</span>
+        <a href="https://www.instagram.com/rathna_makeup_artistry" target="_blank" class="btn-primary svc-cta">⭐ Book a Service</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAKEUP -->
+  <section class="makeup" id="makeup">
+    <div class="makeup-hero-bg">
+      <div class="mkp-shape mkp-shape-1"></div>
+      <div class="mkp-shape mkp-shape-2"></div>
+    </div>
+    <div class="makeup-container">
+      <div class="section-header">
+        <span class="section-tag" style="background:rgba(255,255,255,0.15);color:#fff">❀ Makeup Artistry</span>
+        <h2 class="section-title" style="color:#fff">Professional <span style="color:#f0e0c0">Makeup Services</span></h2>
+        <p class="section-subtitle" style="color:rgba(255,255,255,0.8)">From bridal elegance to everyday glamour — we bring your vision to life</p>
+      </div>
+      <div class="makeup-grid">
+        <div class="mkp-card mkp-bridal">
+          <div class="mkp-card-header">
+            <span class="mkp-icon">💍</span>
+            <div><h3>Bridal Makeup</h3><p>Your most beautiful day deserves the best</p></div>
+          </div>
+          <ul class="mkp-list">
+            <li>✦ Bridal Makeup</li><li>✦ Engagement Makeup</li><li>✦ Reception Makeup</li>
+            <li>✦ Wedding Makeup</li><li>✦ Bridal Hair Styling</li><li>✦ Bridal Draping</li>
+            <li>✦ Bridal Saree Draping</li><li>✦ Bridal Makeup Trial</li>
+          </ul>
+        </div>
+        <div class="mkp-card mkp-professional">
+          <div class="mkp-card-header">
+            <span class="mkp-icon">🌸</span>
+            <div><h3>Professional Makeup</h3><p>Flawless looks for every occasion</p></div>
+          </div>
+          <ul class="mkp-list">
+            <li>✦ Professional Makeup</li><li>✦ HD Makeup</li><li>✦ Airbrush Makeup</li>
+            <li>✦ Traditional Makeup</li><li>✦ Party Makeup</li><li>✦ Photoshoot Makeup</li>
+            <li>✦ Model Makeup</li>
+          </ul>
+        </div>
+        <div class="mkp-card mkp-events">
+          <div class="mkp-card-header">
+            <span class="mkp-icon">✨</span>
+            <div><h3>Event Makeup</h3><p>Makeup for every celebration in your life</p></div>
+          </div>
+          <div class="mkp-events-grid">
+            <span class="mkp-event-tag">Wedding</span><span class="mkp-event-tag">Reception</span>
+            <span class="mkp-event-tag">Engagement</span><span class="mkp-event-tag">Mehendi</span>
+            <span class="mkp-event-tag">Haldi</span><span class="mkp-event-tag">Baby Shower</span>
+            <span class="mkp-event-tag">Birthday</span><span class="mkp-event-tag">Anniversary</span>
+            <span class="mkp-event-tag">Festival</span><span class="mkp-event-tag">Photoshoot</span>
+            <span class="mkp-event-tag">Pre-Wedding Shoot</span><span class="mkp-event-tag">Family Functions</span>
+            <span class="mkp-event-tag">Traditional Functions</span><span class="mkp-event-tag">Corporate Events</span>
+            <span class="mkp-event-tag">Any Special Occasion</span>
+          </div>
+        </div>
+      </div>
+      <div class="makeup-cta">
+        <div class="mkp-cta-content">
+          <div class="mkp-cta-icon">❀</div>
+          <h3>Make Your Special Day Even More Beautiful</h3>
+          <p>Book your makeup appointment with Apeksha Beauty Parlour</p>
+          <div class="mkp-cta-btns">
+            <a href="mailto:apekshabeautyparlour@gmail.com" class="btn-gold">✉ Book Makeup Appointment</a>
+            <a href="https://www.instagram.com/rathna_makeup_artistry" target="_blank" class="btn-whatsapp">📅 Instagram DM</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section class="why section-pad" id="why">
+    <div class="why-container">
+      <div class="section-header">
+        <span class="section-tag">❤ Why Choose Us</span>
+        <h2 class="section-title">Why Women <span>Love Us</span></h2>
+        <p class="section-subtitle">We go beyond beauty — we create an experience that makes you feel truly special</p>
+      </div>
+      <div class="why-grid">
+        <div class="why-card" style="--card-bg:#fdf0f5;--card-accent:#c9748a"><div class="why-icon-wrap"><span class="why-icon">✨</span></div><h4>Professional Service</h4><p>Skilled beauty professionals dedicated to delivering exceptional results every visit.</p></div>
+        <div class="why-card" style="--card-bg:#fef6ee;--card-accent:#c9a96e"><div class="why-icon-wrap"><span class="why-icon">❀</span></div><h4>Beautiful Makeup</h4><p>Expert makeup artistry that enhances your natural beauty for any occasion.</p></div>
+        <div class="why-card" style="--card-bg:#f5f0fe;--card-accent:#9b72cf"><div class="why-icon-wrap"><span class="why-icon">💍</span></div><h4>Bridal Specialists</h4><p>Specialized bridal packages to make your wedding day absolutely unforgettable.</p></div>
+        <div class="why-card" style="--card-bg:#f0faf5;--card-accent:#4caf82"><div class="why-icon-wrap"><span class="why-icon">🌿</span></div><h4>Personalized Beauty Care</h4><p>Customized treatments tailored to your unique skin type and beauty goals.</p></div>
+        <div class="why-card" style="--card-bg:#fff8f0;--card-accent:#e8834a"><div class="why-icon-wrap"><span class="why-icon">😊</span></div><h4>Comfortable Environment</h4><p>A warm, welcoming and hygienic space where you can relax and enjoy your treatment.</p></div>
+        <div class="why-card" style="--card-bg:#fdf0f5;--card-accent:#c9748a"><div class="why-icon-wrap"><span class="why-icon">⭐</span></div><h4>Quality Products</h4><p>Only premium, skin-safe beauty products used across all our services.</p></div>
+        <div class="why-card" style="--card-bg:#f0f8ff;--card-accent:#4a90d9"><div class="why-icon-wrap"><span class="why-icon">📍</span></div><h4>Convenient Location</h4><p>Easily accessible in Belapu, Kaup, Udupi — your neighbourhood beauty destination.</p></div>
+        <div class="why-card" style="--card-bg:#f0faf5;--card-accent:#25d366"><div class="why-icon-wrap"><span class="why-icon">📅</span></div><h4>Easy Appointment Booking</h4><p>Book your appointment with a simple Instagram DM or email.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INSTAGRAM -->
+  <section class="instagram-sec section-pad">
+    <div class="insta-container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fab fa-instagram"></i> Instagram</span>
+        <h2 class="section-title">Follow Our <span>Beauty Journey</span></h2>
+        <p class="section-subtitle">Stay updated with our latest looks, transformations and beauty tips</p>
+      </div>
+      <div class="insta-handle">
+        <i class="fab fa-instagram insta-big-icon"></i>
+        <div>
+          <span class="insta-at">@rathna_makeup_artistry</span>
+          <span class="insta-tagline">Makeup Artistry &amp; Beauty Services</span>
+        </div>
+      </div>
+      <div class="insta-grid">
+        <a href="https://www.instagram.com/rathna_makeup_artistry" target="_blank" class="insta-post"><div class="insta-post-img" style="background:linear-gradient(135deg,#f7c5d5,#e8a0b8)"><span class="insta-post-icon">❀</span></div><div class="insta-post-hover"><i class="fab fa-instagram"></i><span>View on Instagram</span></div></a>
+        <a href="https://www.instagram.com/rathna_makeup_artistry" target="_blank" class="insta-post"><div class="insta-post-img" style="background:linear-gradient(135deg,#fce4ec,#f48fb1)"><span class="insta-post-icon">✨</span></div><div class="insta-post-hover"><i class="fab fa-instagram"></i><span>View on Instagram</span></div></a>
+        <a href="https://www.instagram.com/rathna_makeup_artistry" target="_blank" class="insta-post"><div class="insta-post-img" style="background:linear-gradient(135deg,#f0b8cc,#d4789a)"><span class="insta-post-icon">❀</span></div><div class="insta-post-hover"><i class="fab fa-instagram"></i><span>View on Instagram</span></div></a>
+        <a href="https://www.instagram.com/rathna_makeup_artistry" target="_blank" class="insta-post"><div class="insta-post-img" style="background:linear-gradient(135deg,#ffe0b2,#ffb74d)"><span class="insta-post-icon">✨</span></div><div class="insta-post-hover"><i class="fab fa-instagram"></i><span>View on Instagram</span></div></a>
+        <a href="https://www.instagram.com/rathna_makeup_artistry" target="_blank" class="insta-post"><div class="insta-post-img" style="background:linear-gradient(135deg,#f5d0e8,#d4a0c0)"><span class="insta-post-icon">❀</span></div><div class="insta-post-hover"><i class="fab fa-instagram"></i><span>View on Instagram</span></div></a>
+        <a href="https://www.instagram.com/rathna_makeup_artistry" target="_blank" class="insta-post"><div class="insta-post-img" style="background:linear-gradient(135deg,#e8c4d8,#c9748a)"><span class="insta-post-icon">✨</span></div><div class="insta-post-hover"><i class="fab fa-instagram"></i><span>View on Instagram</span></div></a>
+      </div>
+      <div class="insta-cta">
+        <a href="https://www.instagram.com/rathna_makeup_artistry" target="_blank" class="btn-insta">
+          <i class="fab fa-instagram"></i> Follow on Instagram
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact section-pad" id="contact">
+    <div class="contact-container">
+      <div class="section-header">
+        <span class="section-tag">✉ Contact Us</span>
+        <h2 class="section-title">Get In <span>Touch</span></h2>
+        <p class="section-subtitle">We'd love to hear from you. Reach out to book an appointment or ask any questions.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info-card">
+          <div class="contact-logo">
+            <div class="contact-logo-icon">❀</div>
+            <div><h3>Apeksha Beauty Parlour</h3><p>Ladies Beauty &amp; Makeup Artistry</p></div>
+          </div>
+          <div class="contact-divider"></div>
+          <div class="contact-details">
+            <div class="contact-detail-item">
+              <span class="cd-icon cd-location"><i class="fas fa-map-marker-alt"></i></span>
+              <div><strong>Location</strong><p>Belapu, Kaup Taluk<br />Udupi District, Karnataka, India</p></div>
+            </div>
+            <div class="contact-detail-item">
+              <span class="cd-icon cd-phone"><i class="fas fa-envelope"></i></span>
+              <div><strong>Email</strong><p><a href="mailto:apekshabeautyparlour@gmail.com">apekshabeautyparlour@gmail.com</a></p></div>
+            </div>
+            <div class="contact-detail-item">
+              <span class="cd-icon cd-insta"><i class="fab fa-instagram"></i></span>
+              <div><strong>Instagram</strong><p><a href="https://www.instagram.com/rathna_makeup_artistry" target="_blank">@rathna_makeup_artistry</a></p></div>
+            </div>
+          </div>
+          <div class="contact-action-btns">
+            <a href="mailto:apekshabeautyparlour@gmail.com" class="btn-primary"><i class="fas fa-envelope"></i> Email Us</a>
+            <a href="https://www.instagram.com/rathna_makeup_artistry" target="_blank" class="btn-insta-sm"><i class="fab fa-instagram"></i> Instagram</a>
+          </div>
+        </div>
+        <div class="contact-map-card">
+          <div class="map-header"><span>✨</span><h4>Find Us Here</h4></div>
+          <div class="map-visual">
+            <div class="map-bg">
+              <div class="map-grid-lines"></div>
+              <div class="map-pin-wrap">
+                <div class="map-pin"><i class="fas fa-map-marker-alt map-pin-icon"></i><div class="map-pin-pulse"></div></div>
+                <div class="map-label-card"><span>❀</span><div><strong>Apeksha Beauty Parlour</strong><span>Belapu, Kaup, Udupi</span></div></div>
+              </div>
+            </div>
+          </div>
+          <div class="map-footer"><i class="fas fa-map-marker-alt mf-icon"></i><span>Belapu, Kaup Taluk, Udupi District, Karnataka</span></div>
+          <a href="https://maps.google.com/?q=Belapu,Kaup,Udupi,Karnataka" target="_blank" class="btn-outline map-directions-btn"><i class="fas fa-map-marker-alt"></i> Get Directions</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- APPOINTMENT CTA -->
+  <section class="appt-cta">
+    <div class="appt-bg-shapes"><div class="appt-shape appt-shape-1"></div><div class="appt-shape appt-shape-2"></div></div>
+    <div class="appt-container">
+      <div class="appt-icon">❀</div>
+      <h2>Ready to Feel Beautiful?</h2>
+      <p>Book your appointment with Apeksha Beauty Parlour today.</p>
+      <p class="appt-location">📍 Belapu, Kaup, Udupi District, Karnataka</p>
+      <div class="appt-btns">
+        <a href="https://www.instagram.com/rathna_makeup_artistry" target="_blank" class="btn-primary appt-btn"><i class="fab fa-instagram"></i> Instagram</a>
+        <a href="https://www.instagram.com/rathna_makeup_artistry" target="_blank" class="btn-outline appt-btn"><i class="fas fa-calendar-alt"></i> Book Appointment</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-container">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <span class="footer-logo-icon">❀</span>
+            <div><span class="footer-logo-main">Apeksha</span><span class="footer-logo-sub">Beauty Parlour</span></div>
+          </div>
+          <p class="footer-tagline">"Beauty, Elegance &amp; Confidence"</p>
+          <p class="footer-desc">Professional ladies beauty parlour &amp; makeup artistry in Belapu, Kaup, Udupi.</p>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/rathna_makeup_artistry" target="_blank" class="social-btn insta"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:apekshabeautyparlour@gmail.com" class="social-btn phone"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#makeup">Makeup</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Contact Us</h5>
+          <div class="footer-contact-items">
+            <div class="fci"><i class="fas fa-envelope fci-icon"></i><a href="mailto:apekshabeautyparlour@gmail.com">apekshabeautyparlour@gmail.com</a></div>
+            <div class="fci"><i class="fas fa-map-marker-alt fci-icon"></i><span>Belapu, Kaup Taluk<br />Udupi District, Karnataka</span></div>
+            <div class="fci"><i class="fab fa-instagram fci-icon"></i><a href="https://www.instagram.com/rathna_makeup_artistry" target="_blank">@rathna_makeup_artistry</a></div>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Our Services</h5>
+          <ul>
+            <li><a href="#services">Bridal Makeup</a></li>
+            <li><a href="#services">Party Makeup</a></li>
+            <li><a href="#services">HD Makeup</a></li>
+            <li><a href="#services">Facial &amp; Skin Care</a></li>
+            <li><a href="#services">Hair Services</a></li>
+            <li><a href="#services">Manicure &amp; Pedicure</a></li>
+            <li><a href="#services">Waxing</a></li>
+            <li><a href="#services">Nail Art</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-bottom-inner">
+        <p>© 2026 Apeksha Beauty Parlour. All Rights Reserved.</p>
+        <p class="footer-made">Made with ❤ for beautiful women</p>
+        <p class="footer-designed">Designed &amp; Developed by <span>Prathwik Bhandary</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
